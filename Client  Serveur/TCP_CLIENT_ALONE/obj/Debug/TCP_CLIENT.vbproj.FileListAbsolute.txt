@@ -1,0 +1,61 @@
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe.config
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\bin\Debug\TCP_CLIENT.pdb
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\bin\Debug\TCP_CLIENT.xml
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.Form1.resources
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.vbproj.GenerateResource.Cache
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.exe
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.xml
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\TCP_CLIENT\obj\Debug\TCP_CLIENT.pdb
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe.config
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.exe
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.xml
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.pdb
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\bin\Debug\TCP_CLIENT.pdb
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\bin\Debug\TCP_CLIENT.xml
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.Form1.resources
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
+E:\Work\Projets VB - essai TCP\TCP_CLIENT\obj\Debug\TCP_CLIENT.vbproj.GenerateResource.Cache
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe.config
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.exe
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.xml
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.pdb
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.pdb
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.xml
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\ResolveAssemblyReference.cache
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.Form1.resources
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\GenerateResource.read.1.tlog
+D:\Developpement\VBNET\REGIS\TCP_CLIENT\obj\Debug\GenerateResource.write.1.tlog
+C:\Développement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe.config
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.exe
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.xml
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.pdb
+C:\Développement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe
+C:\Développement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.pdb
+C:\Développement\VBNET\REGIS\TCP_CLIENT\bin\Debug\TCP_CLIENT.xml
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\ResolveAssemblyReference.cache
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.Form1.resources
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\GenerateResource.read.1.tlog
+C:\Développement\VBNET\REGIS\TCP_CLIENT\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe.config
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\bin\Debug\TCP_CLIENT.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\bin\Debug\TCP_CLIENT.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\bin\Debug\TCP_CLIENT.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.Form1.resources
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT.exe.config
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe.config

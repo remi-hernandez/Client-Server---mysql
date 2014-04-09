@@ -1,0 +1,66 @@
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbproj.GenerateResource.Cache
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+E:\Work\Projets VB - essai TCP\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\ResolveAssemblyReference.cache
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\GenerateResource.read.1.tlog
+D:\Developpement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\GenerateResource.write.1.tlog
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\ResolveAssemblyReference.cache
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\GenerateResource.read.1.tlog
+C:\Développement\VBNET\REGIS\TCP_SERVEUR\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.manifest
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.application
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe.manifest
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.application
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.manifest
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.application
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbproj.GenerateResource.Cache
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe.manifest
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.application
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbprojResolveAssemblyReference.cache
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.Entity.EF6.dll

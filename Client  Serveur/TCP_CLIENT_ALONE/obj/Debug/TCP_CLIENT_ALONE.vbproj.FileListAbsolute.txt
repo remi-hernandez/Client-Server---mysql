@@ -1,0 +1,22 @@
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe.config
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.Resources.resources
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.exe
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.xml
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.pdb
+C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.Client.resources
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe.config
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.exe
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.xml
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.pdb
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.Client.resources
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.Resources.resources
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT_ALONE.vbproj.GenerateResource.Cache
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.pdb
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.xml
