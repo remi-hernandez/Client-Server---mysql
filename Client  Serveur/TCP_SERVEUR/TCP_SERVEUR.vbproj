@@ -119,9 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\BDD.vb" />
+    <Compile Include="Class\Parser.vb" />
     <Compile Include="Class\SocketServeur.vb" />
+    <Compile Include="Class\ThServer.vb" />
     <Compile Include="Class\traitement.vb" />
-    <Compile Include="Forms\Class1.vb" />
     <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -129,7 +130,15 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Thread.vb" />
     <Compile Include="Forms\Traitement.vb" />
+    <Compile Include="Forms\VariablesGlobales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -149,6 +158,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

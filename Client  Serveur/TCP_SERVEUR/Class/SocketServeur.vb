@@ -2,11 +2,12 @@
 Imports System.Net.Sockets
 
 Public Class SocketServeur
+
     Public Event ClientAccepteOrDeco(ByVal sender As Object, ByVal e As EventArgs) 'Evenement au moment de la connexion ou Deco d'un client
     Public Event ClientMessage(ByVal sender As Object, ByVal Msg As String, ByVal e As EventArgs) 'Evenement au moment de la reception d'un message d'un client
-    Private socketServeur As New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp) 'l'Objet Socket du serveur
     Private veilleur = New System.Threading.Thread(AddressOf Veille) 'Premier thread qui servira à veiller puis accepter les clients
-    'Private myIEP As New IPEndPoint(IPAddress.Any, 80)
+
+    Private socketServeur As New Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp) 'l'Objet Socket du serveur
     Public myIEP As New IPEndPoint(IPAddress.Parse("127.0.0.1"), "10000")
     Private rBuf() As Byte = New Byte(1024) {}
 
@@ -33,6 +34,16 @@ Public Class SocketServeur
         _nombreClients = 0
     End Sub
 
+    Public Sub MiseAZeroIdListBox()
+        Dim i As Integer
+
+        i = 0
+        While i < 16
+            G_IdListBox(i) = 0
+            i = i + 1
+        End While
+    End Sub
+
     Sub RunServeur() 'Notre méthode de lancement du serveur
         Try
             'On ouvre l'écoute sur le port 10000, IP 127.0.0.1 (voir myIEP)
@@ -53,7 +64,7 @@ Public Class SocketServeur
         _etatServeur = Etats.Close
     End Sub
 
-    Private Sub ConnectionAcceptCallback(asyncResult As IAsyncResult)
+    Private Sub ConnectionAcceptCallback(ByVal asyncResult As IAsyncResult)
         'Fonction asynchrone (Thread) permettant de connecter un client
         Dim socketClient As Socket
         socketClient = socketServeur.EndAccept(asyncResult)
@@ -66,7 +77,7 @@ Public Class SocketServeur
         socketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, socketClient) 'toujours en asynchrone, la fonction "ReceptionDoneeClient" traitera la réception des données
     End Sub
 
-    Private Sub ReceptionDoneeClient(asyncResult As IAsyncResult)
+    Private Sub ReceptionDoneeClient(ByVal asyncResult As IAsyncResult)
         Dim socketClient As Socket = CType(asyncResult.AsyncState, Socket)
         Try
             Dim Read As Integer = socketClient.EndReceive(asyncResult)
