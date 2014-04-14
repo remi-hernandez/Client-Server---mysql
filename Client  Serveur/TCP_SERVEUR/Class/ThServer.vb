@@ -7,6 +7,15 @@
 
     '' Getter - setter
 
+    Public Property getSetForm As Form
+        Get
+            Return _form
+        End Get
+        Set(ByVal value As Form)
+            _form = value
+        End Set
+    End Property
+
     Public Property getSetError() As String
         Get
             Return _error
@@ -28,11 +37,13 @@
     '' Constructeur
 
     Public Sub New(ByVal form As MainForm, ByVal flag As String)
+        MessageBox.Show("triboulade one : " + flag)
         If flag = "setId" Then
+            MessageBox.Show("triboulade tou : " + flag)
             form.Invoke(Sub() form.ListBoxError.Items.Add("DEBUG [Constructor id]"))
             selectIdListBox()
         End If
-        _form = form
+        _form = Form
     End Sub
 
     '' Methodes
@@ -46,13 +57,14 @@
         Dim i As New Integer
         Dim tmp As New Integer
 
+        MessageBox.Show("la triboulade")
         i = 0
         tmp = 1
         While i < 16 And tmp = 1
             tmp = G_IdListBox(i)
             i += 1
         End While
-        _form.Invoke(Sub() _form.ListBoxError.Items.Add("DEBUG [wtf id] id : " + i.ToString()))
+        '_form.Invoke(Sub() _form.ListBoxError.Items.Add("DEBUG [wtf id] id : " + i.ToString()))
         If tmp = 0 And i < 16 Then
             _idListBox = i
             G_IdListBox(i - 1) = 1
@@ -62,10 +74,9 @@
 
     Public Sub PrintText(ByVal str As String)
         Dim id As Integer = _idListBox
-        'MessageBox.Show("id : " + id.ToString() + " string : " + str)
+        MessageBox.Show("In print!" + "id : " + id.ToString() + " string : " + str)
         Select Case id
             Case 1
-                ' MainForm.ListBox1.Items.Add(str)
                 _form.Invoke(Sub() _form.ListBox1.Items.Add(str))
             Case 2
                 _form.Invoke(Sub() _form.ListBox2.Items.Add(str))

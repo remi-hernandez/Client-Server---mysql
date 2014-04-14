@@ -69,7 +69,7 @@ Public Class SocketServeur
     Private Sub ConnectionAcceptCallback(ByVal asyncResult As IAsyncResult)
         Dim struct As New StructDataThread
         Dim socketClient As Socket
-        Dim thServer As New ThServer(_form, "setId ;")
+        Dim thServer As New ThServer(_form, "setId")
         Dim myEventsArgs As New MyEventArgs
 
         socketClient = socketServeur.EndAccept(asyncResult)
@@ -83,41 +83,35 @@ Public Class SocketServeur
 
     Private Sub ReceptionDoneeClient(ByVal asyncResult As IAsyncResult)
         'Dim socketClient As Socket = CType(asyncResult.AsyncState, Socket)
-
         Dim struct As StructDataThread = CType(asyncResult.AsyncState, StructDataThread)
         Try
             Dim Read As Integer = struct.SocketClient.EndReceive(asyncResult)
+            struct.thServer.getSetForm = _form
             If Read > 0 Then
 
                 '' Test
 
-                '' # appeller la form depuis une classe pour interragir dedans.
-
-                ' Dim thServer As New ThServer(_form, "")
                 ' _form.Invoke(Sub() _form.ListBoxError.Items.Add("THIS IS THE ID" + thServer.getIdListBox().ToString()))
-                ' thServer = G_ThServerTmp
                 Dim msg = System.Text.Encoding.Default.GetString(rBuf, 0, Read)
                 '
                 ' _form.Invoke(Sub() _form.ListBoxError.Items.Add("DEBUG [recptdataclient]"))
                 ' MessageBox.Show("Rouble")
                 '
 
-
-
                 struct.thServer.Parser.Parse(msg)
                 MessageBox.Show(struct.thServer.Parser.getSetMsgReturn)
-                MessageBox.Show(struct.thServer.getSetError())
                 struct.thServer.PrintText(msg)
-
+                MessageBox.Show("tentative de print sur interface")
                 '' Test
 
                 RaiseEvent ClientMessage(struct.SocketClient, msg, EventArgs.Empty) 'On raise l'évenement "ClientMessage", pour permettre à l'interface d'afficher les messages
 
+                MessageBox.Show("CLIENT MESSAGE ")
                 '/// ICI, TRAITEMENT PARTICULIER EN FONCTION DES DONNEES (appel à la bdd par exemple) ///
                 ' RaiseEvent ClientMessage(socketClient, System.Text.Encoding.Default.GetString(rBuf, 0, Read), EventArgs.Empty) 'On raise l'évenement "ClientMessage", pour permettre à l'interface d'afficher les messages
 
                 struct.SocketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, struct) 'On rappel en asynchrone la même fonction (elle-même), de cette façon via des threads, nous sommes toujours à l'écoute de potentiels envois des clients
-
+                MessageBox.Show("Begin Receive")
                 'SocketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, SocketClient) 'On rappel en asynchrone la même fonction (elle-même), de cette façon via des threads, nous sommes toujours à l'écoute de potentiels envois des clients
             ElseIf Read = 0 Then
                 _nombreClients -= 1
