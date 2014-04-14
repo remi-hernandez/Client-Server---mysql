@@ -65,7 +65,7 @@ C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TC
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbprojResolveAssemblyReference.cache
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.MainForm.resources
-C:\Users\remi\Dropbox\work\fidelite-concept\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
-C:\Users\remi\Dropbox\work\fidelite-concept\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
-C:\Users\remi\Dropbox\work\fidelite-concept\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
-C:\Users\remi\Dropbox\work\fidelite-concept\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+C:\Users\remi\Desktop\Client - Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+C:\Users\remi\Desktop\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+C:\Users\remi\Desktop\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+C:\Users\remi\Desktop\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb

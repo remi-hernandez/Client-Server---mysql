@@ -54,8 +54,3 @@ C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\
 C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\TCP_CLIENT.Resources.resources
 C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT\obj\Debug\GenerateResource.write.1.tlog
-C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT.exe.config
-C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.exe
-C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.xml
-C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\obj\Debug\TCP_CLIENT.pdb
-C:\Documents and Settings\sr\Bureau\RemiH\Client - Serveur\TCP_CLIENT_ALONE\bin\Debug\TCP_CLIENT_ALONE.exe.config

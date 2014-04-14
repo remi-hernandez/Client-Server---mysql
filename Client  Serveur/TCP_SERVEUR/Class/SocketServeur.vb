@@ -3,6 +3,7 @@ Imports System.Net.Sockets
 
 Public Class SocketServeur
 
+    Public _form As MainForm
     Public Event ClientAccepteOrDeco(ByVal sender As Object, ByVal e As EventArgs) 'Evenement au moment de la connexion ou Deco d'un client
     Public Event ClientMessage(ByVal sender As Object, ByVal Msg As String, ByVal e As EventArgs) 'Evenement au moment de la reception d'un message d'un client
     Private veilleur = New System.Threading.Thread(AddressOf Veille) 'Premier thread qui servira à veiller puis accepter les clients
@@ -64,32 +65,65 @@ Public Class SocketServeur
         _etatServeur = Etats.Close
     End Sub
 
+    'Fonction asynchrone (Thread) permettant de connecter un client
     Private Sub ConnectionAcceptCallback(ByVal asyncResult As IAsyncResult)
-        'Fonction asynchrone (Thread) permettant de connecter un client
+        Dim struct As New StructDataThread
         Dim socketClient As Socket
-        socketClient = socketServeur.EndAccept(asyncResult)
-
-        _nombreClients += 1
+        Dim thServer As New ThServer(_form, "setId ;")
         Dim myEventsArgs As New MyEventArgs
+
+        socketClient = socketServeur.EndAccept(asyncResult)
+        struct.thServer = thServer
+        struct.SocketClient = socketClient
+        _nombreClients += 1
         myEventsArgs.MyArgs = "+"
         RaiseEvent ClientAccepteOrDeco(socketClient, myEventsArgs) 'On raise l'évenement "ClientAccepteOrDeco", dans le formulaire voir le traitement associé
-
-        socketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, socketClient) 'toujours en asynchrone, la fonction "ReceptionDoneeClient" traitera la réception des données
+        socketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, struct) 'toujours en asynchrone, la fonction "ReceptionDoneeClient" traitera la réception des données
     End Sub
 
     Private Sub ReceptionDoneeClient(ByVal asyncResult As IAsyncResult)
-        Dim socketClient As Socket = CType(asyncResult.AsyncState, Socket)
+        'Dim socketClient As Socket = CType(asyncResult.AsyncState, Socket)
+
+        Dim struct As StructDataThread = CType(asyncResult.AsyncState, StructDataThread)
         Try
-            Dim Read As Integer = socketClient.EndReceive(asyncResult)
-            If Read > 0 Then 'On recoit des données de la part du client
+            Dim Read As Integer = struct.SocketClient.EndReceive(asyncResult)
+            If Read > 0 Then
+
+                '' Test
+
+                '' # appeller la form depuis une classe pour interragir dedans.
+
+                ' Dim thServer As New ThServer(_form, "")
+                ' _form.Invoke(Sub() _form.ListBoxError.Items.Add("THIS IS THE ID" + thServer.getIdListBox().ToString()))
+                ' thServer = G_ThServerTmp
+                Dim msg = System.Text.Encoding.Default.GetString(rBuf, 0, Read)
+                '
+                ' _form.Invoke(Sub() _form.ListBoxError.Items.Add("DEBUG [recptdataclient]"))
+                ' MessageBox.Show("Rouble")
+                '
+
+
+
+                struct.thServer.Parser.Parse(msg)
+                MessageBox.Show(struct.thServer.Parser.getSetMsgReturn)
+                MessageBox.Show(struct.thServer.getSetError())
+                struct.thServer.PrintText(msg)
+
+                '' Test
+
+                RaiseEvent ClientMessage(struct.SocketClient, msg, EventArgs.Empty) 'On raise l'évenement "ClientMessage", pour permettre à l'interface d'afficher les messages
+
                 '/// ICI, TRAITEMENT PARTICULIER EN FONCTION DES DONNEES (appel à la bdd par exemple) ///
-                RaiseEvent ClientMessage(socketClient, System.Text.Encoding.Default.GetString(rBuf, 0, Read), EventArgs.Empty) 'On raise l'évenement "ClientMessage", pour permettre à l'interface d'afficher les messages
-                socketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, socketClient) 'On rappel en asynchrone la même fonction (elle-même), de cette façon via des threads, nous sommes toujours à l'écoute de potentiels envois des clients
-            ElseIf Read = 0 Then 'C'est que le client s'est déconnecté ou message vide apparemment ?
+                ' RaiseEvent ClientMessage(socketClient, System.Text.Encoding.Default.GetString(rBuf, 0, Read), EventArgs.Empty) 'On raise l'évenement "ClientMessage", pour permettre à l'interface d'afficher les messages
+
+                struct.SocketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, struct) 'On rappel en asynchrone la même fonction (elle-même), de cette façon via des threads, nous sommes toujours à l'écoute de potentiels envois des clients
+
+                'SocketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, SocketClient) 'On rappel en asynchrone la même fonction (elle-même), de cette façon via des threads, nous sommes toujours à l'écoute de potentiels envois des clients
+            ElseIf Read = 0 Then
                 _nombreClients -= 1
                 Dim myEventsArgs As New MyEventArgs
                 myEventsArgs.MyArgs = "-"
-                RaiseEvent ClientAccepteOrDeco(socketClient, myEventsArgs) 'On raise l'évenement "ClientAccepteOrDeco", dans le formulaire voir le traitement associé
+                RaiseEvent ClientAccepteOrDeco(struct.SocketClient, myEventsArgs) 'On raise l'évenement "ClientAccepteOrDeco", dans le formulaire voir le traitement associé
             End If
         Catch ex As ObjectDisposedException
             MessageBox.Show("Client déconnecté !")
@@ -105,6 +139,8 @@ Public Class SocketServeur
         'On boucle tant que l'état du serveur est "running"
         While (Me.etatServeur = Etats.Running)
             Dim listListen As New ArrayList()
+            Dim struct As New StructDataThread
+
             listListen.Add(socketServeur)
             Socket.Select(listListen, Nothing, Nothing, 1000) 'Cette fonction traite la liste "listListen", s'il reste un socket dans la liste, c'est qu'un client cherche à se connecter
             For i = 0 To listListen.Count - 1
@@ -116,11 +152,23 @@ Public Class SocketServeur
         End While
     End Sub
 
+    Private Sub ReceptionDonneeClient()
+        Throw New NotImplementedException
+    End Sub
+
+    Public Sub CheckThServerId(ByVal CpfSiteCaisse As String)
+        Dim cpt As Integer
+
+        cpt = 0
+        ' While (G_TabIdThServer[cpt] != CpfSiteCaisse )
+        'End While
+
+
+    End Sub
+
 End Class
 
 Public Class MyEventArgs
     Inherits EventArgs
-
     Public Property MyArgs As String
-
 End Class

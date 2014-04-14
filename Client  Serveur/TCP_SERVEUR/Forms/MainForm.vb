@@ -10,6 +10,7 @@ Public Class MainForm
             Serveur = New SocketServeur()
             Serveur.RunServeur()
             Serveur.MiseAZeroIdListBox()
+            Serveur._form = Me
             ListBoxDetails.Items.Add("Écoute sur " & Serveur.myIEP.Address.ToString() & ":" & Serveur.myIEP.Port.ToString())
             Me.ProgressBar1.Style = ProgressBarStyle.Marquee
             ButtonServeur.Text = "Arreter le Serveur"
@@ -43,19 +44,7 @@ Public Class MainForm
 
     'Sert a afficher les messages du client précédé de son IP et du Port -> dans un thread
     Sub MiseAJourMsgClient(ByVal sender As Object, ByVal Msg As String, ByVal e As EventArgs)
-        Dim thServer As New ThServer
-        Dim SocketClient As Socket = CType(sender, Socket)
-
-        thServer.Parser.Parse(Msg)
-        Me.Invoke(Sub() ListBoxError.Items.Add(thServer.Parser.getSetMsgReturn()))
-        thServer.selectIdListBox()
-        Me.Invoke(Sub() ListBoxError.Items.Add(thServer.getSetError()))
-        PrintText(Msg, thServer.getIdListBox())
-
-        ''
-        '' Code sale
-        ''
-        Me.Invoke(Sub() Me.ListBoxDetails.Items.Add("Message de " & SocketClient.RemoteEndPoint.ToString() & " : " & Msg))
+        'Me.Invoke(Sub() Me.ListBoxDetails.Items.Add("Message de " & SocketClient.RemoteEndPoint.ToString() & " : " & Msg))
         'traitement de la rame à partir d'un thread différent
         Dim LI() As String = Split(Msg, "¤")
         'ajout pour permettre au serveur de répondre #CODE
@@ -64,9 +53,15 @@ Public Class MainForm
             Me.Invoke(Sub() Me.ListBoxDetails.Items.Add("Operation d'un client"))
             Console.WriteLine("Socket send message for operation")
         End If
-
+        'afficher les champs
+        'modifie les labels sur le thread principal
+        ' Me.Invoke(Sub() Me.Label1.Text = LI(2))
+        ' Me.Invoke(Sub() Me.Label2.Text = LI(3))
+        ' Me.Invoke(Sub() Me.Label3.Text = LI(4))
+        ' Me.Invoke(Sub() Me.Label4.Text = LI(5))
+        ' Me.Invoke(Sub() Me.Label5.Text = LI(6))
+        'gérer les directions à prendre
         If LI(1) = "connexion" Then
-            PrintText("Connexion", thServer.getIdListBox())
             Console.WriteLine("Connexion client")
             Me.Invoke(Sub() Me.ListBoxDetails.Items.Add("Connexion d'un client"))
         End If
@@ -76,40 +71,40 @@ Public Class MainForm
         End If
     End Sub
 
-    Public Sub PrintText(ByVal str As String, ByVal id As Integer)
-        Select Case id
-            Case 1
-                Me.Invoke(Sub() Me.ListBox1.Items.Add(str))
-            Case 2
-                Me.Invoke(Sub() Me.ListBox2.Items.Add(str))
-            Case 3
-                Me.Invoke(Sub() Me.ListBox3.Items.Add(str))
-            Case 4
-                Me.Invoke(Sub() Me.ListBox4.Items.Add(str))
-            Case 5
-                Me.Invoke(Sub() Me.ListBox5.Items.Add(str))
-            Case 6
-                Me.Invoke(Sub() Me.ListBox6.Items.Add(str))
-            Case 7
-                Me.Invoke(Sub() Me.ListBox7.Items.Add(str))
-            Case 8
-                Me.Invoke(Sub() Me.ListBox8.Items.Add(str))
-            Case 9
-                Me.Invoke(Sub() Me.ListBox9.Items.Add(str))
-            Case 10
-                Me.Invoke(Sub() Me.ListBox10.Items.Add(str))
-            Case 11
-                Me.Invoke(Sub() Me.ListBox11.Items.Add(str))
-            Case 12
-                Me.Invoke(Sub() Me.ListBox12.Items.Add(str))
-            Case 13
-                Me.Invoke(Sub() Me.ListBox13.Items.Add(str))
-            Case 14
-                Me.Invoke(Sub() Me.ListBox14.Items.Add(str))
-            Case 15
-                Me.Invoke(Sub() Me.ListBox15.Items.Add(str))
-            Case 16
-                Me.Invoke(Sub() Me.ListBox16.Items.Add(str))
-        End Select
-    End Sub
+    ' Public Sub PrintText(ByVal str As String, ByVal id As Integer)
+    '     Select Case id
+    '         Case 1
+    '             Me.Invoke(Sub() Me.ListBox1.Items.Add(str))
+    '         Case 2
+    '             Me.Invoke(Sub() Me.ListBox2.Items.Add(str))
+    '         Case 3
+    '             Me.Invoke(Sub() Me.ListBox3.Items.Add(str))
+    '         Case 4
+    '             Me.Invoke(Sub() Me.ListBox4.Items.Add(str))
+    '         Case 5
+    '             Me.Invoke(Sub() Me.ListBox5.Items.Add(str))
+    '         Case 6
+    '             Me.Invoke(Sub() Me.ListBox6.Items.Add(str))
+    '         Case 7
+    '             Me.Invoke(Sub() Me.ListBox7.Items.Add(str))
+    '         Case 8
+    '             Me.Invoke(Sub() Me.ListBox8.Items.Add(str))
+    '         Case 9
+    '             Me.Invoke(Sub() Me.ListBox9.Items.Add(str))
+    '         Case 10
+    '             Me.Invoke(Sub() Me.ListBox10.Items.Add(str))
+    '         Case 11
+    '             Me.Invoke(Sub() Me.ListBox11.Items.Add(str))
+    '         Case 12
+    '             Me.Invoke(Sub() Me.ListBox12.Items.Add(str))
+    '         Case 13
+    '             Me.Invoke(Sub() Me.ListBox13.Items.Add(str))
+    '         Case 14
+    '             Me.Invoke(Sub() Me.ListBox14.Items.Add(str))
+    '         Case 15
+    '             Me.Invoke(Sub() Me.ListBox15.Items.Add(str))
+    '         Case 16
+    '             Me.Invoke(Sub() Me.ListBox16.Items.Add(str))
+    '     End Select
+    ' End Sub
 End Class

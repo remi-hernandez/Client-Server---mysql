@@ -136,9 +136,9 @@
     <Compile Include="Forms\MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Thread.vb" />
     <Compile Include="Forms\Traitement.vb" />
     <Compile Include="Forms\VariablesGlobales.vb" />
+    <Compile Include="Structure.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

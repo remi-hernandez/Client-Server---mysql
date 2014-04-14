@@ -1,6 +1,14 @@
 
-
 ##Client##
+
+##
+## Travail actuel
+##
+
+Reprise du code existant afin de faire un client pour un utilisateur permettant une connexion et un envoie de data 
+pour une transaction.
+
+-> une seule socket
 
 ##
 ## Résumé Form1.vb
