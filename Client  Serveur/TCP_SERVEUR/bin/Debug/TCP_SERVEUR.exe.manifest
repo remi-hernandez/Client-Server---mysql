@@ -57,6 +57,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="356864">
+      <assemblyIdentity name="MySql.Data" version="6.3.7.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>2BP4Bh6N5As1WwsUcDMdZoEN+ZU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.Entity.EF6.dll" size="312832">
       <assemblyIdentity name="MySql.Data.Entity.EF6" version="6.8.3.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -69,14 +81,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCP_SERVEUR.exe" size="49152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCP_SERVEUR.exe" size="58368">
       <assemblyIdentity name="TCP_SERVEUR" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vJLzI5BmDJX/CBSwXLr+XhjcAlo=</dsig:DigestValue>
+        <dsig:DigestValue>/X4lHTx2janQt+LxomXXdmJq+JU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -37,9 +37,7 @@
     '' Constructeur
 
     Public Sub New(ByVal form As MainForm, ByVal flag As String)
-        MessageBox.Show("triboulade one : " + flag)
         If flag = "setId" Then
-            MessageBox.Show("triboulade tou : " + flag)
             form.Invoke(Sub() form.ListBoxError.Items.Add("DEBUG [Constructor id]"))
             selectIdListBox()
         End If
@@ -57,14 +55,12 @@
         Dim i As New Integer
         Dim tmp As New Integer
 
-        MessageBox.Show("la triboulade")
         i = 0
         tmp = 1
         While i < 16 And tmp = 1
             tmp = G_IdListBox(i)
             i += 1
         End While
-        '_form.Invoke(Sub() _form.ListBoxError.Items.Add("DEBUG [wtf id] id : " + i.ToString()))
         If tmp = 0 And i < 16 Then
             _idListBox = i
             G_IdListBox(i - 1) = 1
@@ -74,7 +70,6 @@
 
     Public Sub PrintText(ByVal str As String)
         Dim id As Integer = _idListBox
-        MessageBox.Show("In print!" + "id : " + id.ToString() + " string : " + str)
         Select Case id
             Case 1
                 _form.Invoke(Sub() _form.ListBox1.Items.Add(str))

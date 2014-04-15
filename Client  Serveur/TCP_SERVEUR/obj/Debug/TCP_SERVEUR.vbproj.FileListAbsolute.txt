@@ -65,3 +65,21 @@ C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TC
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbprojResolveAssemblyReference.cache
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.MainForm.resources
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.config
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.xml
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.pdb
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe.manifest
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.application
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.exe
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.pdb
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\TCP_SERVEUR.xml
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.dll
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbprojResolveAssemblyReference.cache
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Form1.resources
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.MainForm.resources
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.Resources.resources
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbproj.GenerateResource.Cache
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe.manifest
+C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.application
