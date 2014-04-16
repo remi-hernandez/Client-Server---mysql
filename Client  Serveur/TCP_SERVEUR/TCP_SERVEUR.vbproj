@@ -122,7 +122,6 @@
     <Compile Include="Class\Parser.vb" />
     <Compile Include="Class\SocketServeur.vb" />
     <Compile Include="Class\ThServer.vb" />
-    <Compile Include="Class\traitement.vb" />
     <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -98,7 +98,7 @@ Public Class SocketServeur
                 Dim msg = System.Text.Encoding.Default.GetString(rBuf, 0, Read)
                 struct.thServer.Parser.Parse(msg)
                 struct.thServer.PrintText(msg)
-                RaiseEvent ClientMessage(struct.SocketClient, msg, EventArgs.Empty)
+                RaiseEvent ClientMessage(struct, msg, EventArgs.Empty)
                 struct.SocketClient.BeginReceive(rBuf, 0, rBuf.Length, SocketFlags.None, AddressOf ReceptionDoneeClient, struct)
             ElseIf Read = 0 Then
                 Dim myEventsArgs As New MyEventArgs

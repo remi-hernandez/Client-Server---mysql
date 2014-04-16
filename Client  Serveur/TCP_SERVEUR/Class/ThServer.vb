@@ -44,11 +44,15 @@
         _form = Form
     End Sub
 
-    '' Methodes
+    '' Méthodes
 
     Public Sub pushError(ByVal errorValue As String)
         _error = errorValue
         Console.WriteLine(errorValue)
+    End Sub
+
+    Public Sub deconnexion()
+        G_IdListBox(_idListBox) = 0
     End Sub
 
     Private Sub selectIdListBox()
@@ -72,6 +76,7 @@
         Dim id As Integer = _idListBox
         Select Case id
             Case 1
+                _form.Invoke(Sub() _form.ListBox1.BackColor = Color.LawnGreen)
                 _form.Invoke(Sub() _form.ListBox1.Items.Add(str))
             Case 2
                 _form.Invoke(Sub() _form.ListBox2.Items.Add(str))
@@ -103,6 +108,60 @@
                 _form.Invoke(Sub() _form.ListBox15.Items.Add(str))
             Case 16
                 _form.Invoke(Sub() _form.ListBox16.Items.Add(str))
+        End Select
+    End Sub
+
+    Public Sub ChangeColor(ByVal color As String)
+        Dim id As Integer = _idListBox
+        Dim Col As System.Drawing.Color
+
+        If color = "connection" Then
+            Col = Drawing.Color.SeaShell
+        ElseIf color = "introCarte" Then
+            Col = Drawing.Color.PowderBlue
+        ElseIf color = "Achat" Then
+            Col = Drawing.Color.Khaki
+        ElseIf color = "Retrait" Then
+            Col = Drawing.Color.Tan
+        ElseIf color = "demandeInfos" Then
+            Col = Drawing.Color.SandyBrown
+        ElseIf color = "RetraitCarte" Then
+            Col = Drawing.Color.Gray
+        End If
+
+        Select Case id
+            Case 1
+                _form.Invoke(Sub() _form.ListBox1.BackColor = Col)
+            Case 2
+                _form.Invoke(Sub() _form.ListBox2.BackColor = Col)
+            Case 3
+                _form.Invoke(Sub() _form.ListBox3.BackColor = Col)
+            Case 4
+                _form.Invoke(Sub() _form.ListBox4.BackColor = Col)
+            Case 5
+                _form.Invoke(Sub() _form.ListBox5.BackColor = Col)
+            Case 6
+                _form.Invoke(Sub() _form.ListBox6.BackColor = Col)
+            Case 7
+                _form.Invoke(Sub() _form.ListBox7.BackColor = Col)
+            Case 8
+                _form.Invoke(Sub() _form.ListBox8.BackColor = Col)
+            Case 9
+                _form.Invoke(Sub() _form.ListBox9.BackColor = Col)
+            Case 10
+                _form.Invoke(Sub() _form.ListBox10.BackColor = Col)
+            Case 11
+                _form.Invoke(Sub() _form.ListBox11.BackColor = Col)
+            Case 12
+                _form.Invoke(Sub() _form.ListBox12.BackColor = Col)
+            Case 13
+                _form.Invoke(Sub() _form.ListBox13.BackColor = Col)
+            Case 14
+                _form.Invoke(Sub() _form.ListBox14.BackColor = Col)
+            Case 15
+                _form.Invoke(Sub() _form.ListBox15.BackColor = Col)
+            Case 16
+                _form.Invoke(Sub() _form.ListBox16.BackColor = Col)
         End Select
     End Sub
 End Class

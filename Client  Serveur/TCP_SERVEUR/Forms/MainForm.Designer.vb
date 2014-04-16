@@ -65,6 +65,7 @@ Partial Class MainForm
         '
         'ListBox1
         '
+        Me.ListBox1.BackColor = System.Drawing.SystemColors.Window
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Location = New System.Drawing.Point(212, 58)
         Me.ListBox1.Name = "ListBox1"
@@ -89,6 +90,7 @@ Partial Class MainForm
         '
         'ListBox2
         '
+        Me.ListBox2.BackColor = System.Drawing.SystemColors.Window
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.Location = New System.Drawing.Point(517, 58)
         Me.ListBox2.Name = "ListBox2"
@@ -97,6 +99,8 @@ Partial Class MainForm
         '
         'ListBox3
         '
+        Me.ListBox3.BackColor = System.Drawing.SystemColors.Window
+        Me.ListBox3.ForeColor = System.Drawing.SystemColors.WindowText
         Me.ListBox3.FormattingEnabled = True
         Me.ListBox3.Location = New System.Drawing.Point(822, 58)
         Me.ListBox3.Name = "ListBox3"
@@ -113,6 +117,7 @@ Partial Class MainForm
         '
         'ListBox5
         '
+        Me.ListBox5.BackColor = System.Drawing.SystemColors.Window
         Me.ListBox5.FormattingEnabled = True
         Me.ListBox5.Location = New System.Drawing.Point(212, 250)
         Me.ListBox5.Name = "ListBox5"

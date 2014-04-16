@@ -83,3 +83,4 @@ C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR
 C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.vbproj.GenerateResource.Cache
 C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.exe.manifest
 C:\Users\remi\Documents\GitHub\Client-Server---mysql\Client  Serveur\TCP_SERVEUR\obj\Debug\TCP_SERVEUR.application
+C:\Users\FideliteConcept\Desktop\RemiH\Client - Serveur\TCP_SERVEUR\bin\Debug\MySql.Data.dll

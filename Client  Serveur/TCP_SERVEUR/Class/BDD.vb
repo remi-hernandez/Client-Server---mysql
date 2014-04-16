@@ -14,7 +14,7 @@ Public Class BDD
     Private _requete As New MySqlCommand
     Private _donnee As MySqlDataReader
 
-    ''Getters - Setters
+    '' Getters - Setters
 
     Public ReadOnly Property connexionParams() As String
         Get
@@ -22,7 +22,7 @@ Public Class BDD
         End Get
     End Property
 
-    ''Methodes
+    '' Méthodes
 
     Public Sub Connexion()
         Try
