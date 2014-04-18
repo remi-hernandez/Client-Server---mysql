@@ -123,6 +123,7 @@ Public Class SocketServeur
         While (Me.etatServeur = Etats.Running)
             Dim listListen As New ArrayList()
             Dim struct As New StructDataThread
+	    MessageBox.show("Chocolat a la fraise")
 
             listListen.Add(socketServeur)
             Socket.Select(listListen, Nothing, Nothing, 1000)

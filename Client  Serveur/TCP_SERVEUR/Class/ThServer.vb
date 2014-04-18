@@ -1,5 +1,4 @@
 ﻿Public Class ThServer
-    Public Bdd As New BDD
     Public Parser As New Parser
     Private _form As MainForm
     Private _error As String
@@ -74,9 +73,9 @@
 
     Public Sub PrintText(ByVal str As String)
         Dim id As Integer = _idListBox
+
         Select Case id
             Case 1
-                _form.Invoke(Sub() _form.ListBox1.BackColor = Color.LawnGreen)
                 _form.Invoke(Sub() _form.ListBox1.Items.Add(str))
             Case 2
                 _form.Invoke(Sub() _form.ListBox2.Items.Add(str))

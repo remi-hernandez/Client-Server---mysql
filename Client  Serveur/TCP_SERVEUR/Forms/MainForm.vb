@@ -7,6 +7,7 @@ Public Class MainForm
     Private Sub ButtonServeur_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonServeur.Click
         Me.ProgressBar1.Minimum = 0 : Me.ProgressBar1.Maximum = 20 : Me.ProgressBar1.Step = 1
         If ButtonServeur.Text = "Lancer le Serveur" Then
+            ListBox1.BackColor = Drawing.Color.SeaShell
             Serveur = New SocketServeur()
             Serveur.RunServeur()
             Serveur.MiseAZeroIdListBox()
